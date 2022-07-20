@@ -36,7 +36,7 @@ function App() {
   async function authWalletConnect() {
     const user = authenticate({
       provider: "walletconnect",
-      chainId: 1,
+      chainId: 56,
       // mobileLinks: [
       //   "metamask",
       //   "trust",
