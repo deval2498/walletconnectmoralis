@@ -34,9 +34,9 @@ function App() {
   } = useMoralis();
 
   async function authWalletConnect() {
-    const user = authenticate({
+    const user = await Moralis.Web3.authenticate({
       provider: "walletconnect",
-      chainId: 3,
+      chainId: 56,
       // mobileLinks: [
       //   "metamask",
       //   "trust",
@@ -45,14 +45,14 @@ function App() {
       //   "imtoken",
       //   "pillar",
       // ],
-      signingMessage: "Welcome!",
+      signingMessage: "Hello",
     });
     console.log(user);
   }
 
   useEffect(() => {
     if (!isWeb3Enabled && isAuthenticated) {
-      enableWeb3({ provider: "walletconnect", chainId: 3 });
+      enableWeb3({ provider: "walletconnect", chainId: 56 });
       console.log("web3 activated");
     }
   }, [isWeb3Enabled, isAuthenticated, enableWeb3]);
