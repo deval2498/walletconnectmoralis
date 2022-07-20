@@ -45,7 +45,6 @@ function App() {
       //   "imtoken",
       //   "pillar",
       // ],
-      signingMessage: "Hello",
     });
     console.log(user);
   }
