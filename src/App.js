@@ -34,7 +34,7 @@ function App() {
   } = useMoralis();
 
   async function authWalletConnect() {
-    const user = await Moralis.Web3.authenticate({
+    const user = await authenticate({
       provider: "walletconnect",
       chainId: 56,
       // mobileLinks: [
