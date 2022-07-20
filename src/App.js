@@ -15,7 +15,8 @@ const LogoutButton = () => {
       variant="solid"
       isLoading={isAuthenticating}
       onClick={() => logout()}
-      disabled={isAuthenticating}>
+      disabled={isAuthenticating}
+    >
       Logout
     </Button>
   );
@@ -36,14 +37,14 @@ function App() {
     const user = authenticate({
       provider: "walletconnect",
       chainId: 56,
-      // mobileLinks: [
-      //   "metamask",
-      //   "trust",
-      //   "rainbow",
-      //   "argent",
-      //   "imtoken",
-      //   "pillar",
-      // ],
+      mobileLinks: [
+        "metamask",
+        "trust",
+        "rainbow",
+        "argent",
+        "imtoken",
+        "pillar",
+      ],
       signingMessage: "Welcome!",
     });
     console.log(user);
@@ -80,7 +81,8 @@ function App() {
           <Button
             colorScheme="green"
             size="lg"
-            onClick={() => authenticate({ signingMessage: "Hello youtube" })}>
+            onClick={() => authenticate({ signingMessage: "Hello youtube" })}
+          >
             Sign in using Metamask
           </Button>
         </Center>
@@ -89,7 +91,8 @@ function App() {
           <Button
             colorScheme="green"
             size="lg"
-            onClick={() => authWalletConnect()}>
+            onClick={() => authWalletConnect()}
+          >
             Sign in using Wallet Connect
           </Button>
         </Center>
