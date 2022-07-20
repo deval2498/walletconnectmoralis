@@ -36,7 +36,7 @@ function App() {
   async function authWalletConnect() {
     const user = authenticate({
       provider: "walletconnect",
-      chainId: 56,
+      chainId: 3,
       // mobileLinks: [
       //   "metamask",
       //   "trust",
@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     if (!isWeb3Enabled && isAuthenticated) {
-      enableWeb3({ provider: "walletconnect", chainId: 56 });
+      enableWeb3({ provider: "walletconnect", chainId: 3 });
       console.log("web3 activated");
     }
   }, [isWeb3Enabled, isAuthenticated, enableWeb3]);
