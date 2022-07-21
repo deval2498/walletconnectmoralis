@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm":"8.1.2",
-    "node":"14.16.1"
+    "npm": "8.1.2",
+    "node": "14.16.1"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.8",
