@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { MoralisProvider } from "react-moralis";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { BrowserRouter } from "react-router-dom";
 
 const theme = extendTheme({
   config: {
@@ -19,7 +20,9 @@ ReactDOM.render(
   <React.StrictMode>
     <MoralisProvider appId={moralisAppId} serverUrl={moralisServerURL}>
       <ChakraProvider theme={theme}>
+        <BrowserRouter>
         <App />
+        </BrowserRouter>
       </ChakraProvider>
     </MoralisProvider>
   </React.StrictMode>,
