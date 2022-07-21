@@ -1,5 +1,5 @@
 import logo from "./MageLogo.jpg";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { useMoralis } from "react-moralis";
 import { Button, Box, Heading } from "@chakra-ui/react";
@@ -51,10 +51,10 @@ function App() {
   useEffect(() => {
     if (!isWeb3Enabled && isAuthenticated) {
       enableWeb3({ provider: "walletconnect", chainId: 137 });
+      console.log(user.get("ethAddress"), "user address");
       console.log("web3 activated");
-      console.log(user.get("ethAddress"), "okay");
     }
-  }, [isWeb3Enabled, isAuthenticated, enableWeb3]);
+  }, [isWeb3Enabled, isAuthenticated, enableWeb3, user]);
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden") {
