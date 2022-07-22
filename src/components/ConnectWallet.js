@@ -5,9 +5,20 @@ import connectwalletBtn from '../images/connectwalletImg.png'
 import groupMLogo from '../images/groupmLogo.png'
 import { useMoralis } from "react-moralis";
 import { useNavigate } from "react-router-dom";
+import {
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+} from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react';
+import { AlertDialogCloseButton,Button,cancelRef } from '@chakra-ui/react';
 
 
 const ConnectWallet = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   let navigate = useNavigate();
   const {
     authenticate,
@@ -66,10 +77,28 @@ const ConnectWallet = () => {
         <div className='my-5'>
           <span style={{ color: "#4AABE9", fontWeight: "700", fontSize: "42px" }}>#DiveIn</span>
         </div>
-        <div className="d-flex flex-row flex-wrap align-items-center">
+        <button className='wallet-connect-btn' onClick={onOpen}>Connect Wallet</button>
+        <AlertDialog
+        motionPreset='slideInBottom'
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        isCentered
+      >
+        <AlertDialogOverlay />
+
+        <AlertDialogContent>
+          <AlertDialogHeader>Connect Wallet</AlertDialogHeader>
+          <AlertDialogCloseButton />
+          <AlertDialogBody>
+
+        <div className="d-flex flex-column justify-content-center flex-wrap align-items-center">
           <img src={connectwalletBtn} className="my-2" style={{ cursor: "pointer" }} height={55} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
           <button className='wallet-connect-btn ms-2' onClick={() => authWalletConnect()}>Sign using Wallet connect</button>
         </div>
+          </AlertDialogBody>
+        </AlertDialogContent>
+      </AlertDialog>
         <span style={{ fontWeight: "700", color: "white" }}>with a valid event pass NFT.</span>
       </div>
     </div>

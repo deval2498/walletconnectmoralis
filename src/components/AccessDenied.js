@@ -11,6 +11,7 @@ const AccessDenied = () => {
   const handleDisconnect=()=>{
     logout()
     localStorage.setItem('User_Auth',false)
+    localStorage.removeItem("jwt_token")
     navigate('/')
   }
   return (

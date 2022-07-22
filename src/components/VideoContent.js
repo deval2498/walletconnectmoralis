@@ -22,6 +22,7 @@ const VideoContent = () => {
     const handleDisconnect=()=>{
         logout()
         localStorage.setItem('User_Auth',false)
+        localStorage.removeItem("jwt_token")
         navigate('/')
       }
     // useEffect(() => {
