@@ -49,10 +49,12 @@ function App() {
   }
 
   useEffect(() => {
-    if (!isWeb3Enabled && isAuthenticated) {
-      enableWeb3({ provider: "walletconnect", chainId: 137 });
+    if (isAuthenticated) {
       console.log(user.get("ethAddress"), "user address");
+    }
+    if (!isWeb3Enabled && !isAuthenticated) {
       console.log("web3 activated");
+      console.log(isAuthenticated, "checking");
     }
   }, [isWeb3Enabled, isAuthenticated, enableWeb3, user]);
 
