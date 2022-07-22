@@ -2,6 +2,8 @@ import { React, useState, useEffect } from 'react'
 import axios from 'axios';
 import '../CSS/connectwallet.css'
 import connectwalletBtn from '../images/connectwalletImg.png'
+import connectWithMetamask from '../images/connectwithmetamask.png'
+import connectWithwallet from '../images/connectwithwallet.png'
 import groupMLogo from '../images/groupmLogo.png'
 import { useMoralis } from "react-moralis";
 import { useNavigate } from "react-router-dom";
@@ -93,8 +95,8 @@ const ConnectWallet = () => {
           <AlertDialogBody>
 
         <div className="d-flex flex-column justify-content-center flex-wrap align-items-center">
-          <img src={connectwalletBtn} className="my-2" style={{ cursor: "pointer" }} height={55} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
-          <button className='wallet-connect-btn ms-2' onClick={() => authWalletConnect()}>Sign using Wallet connect</button>
+          <img src={connectWithMetamask} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
+          <img src={connectWithwallet} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authWalletConnect()} alt="" srcSet='' />
         </div>
           </AlertDialogBody>
         </AlertDialogContent>
