@@ -111,9 +111,9 @@ function App() {
   return (
     <>
     {/* {!isAuthenticated && !user?<ConnectWallet/>:<VideoContent/>} */}
-    <Routes forceRefresh={true}>
+    <Routes >
       <Route exact path="/" element={<ConnectWallet/>}/>
-      <Route exact path="/accessgranted" forceRefresh={true} element={<VideoContent/>} />
+      <Route exact path="/accessgranted" element={<VideoContent/>} />
       <Route exact path="/accessdenied" element={<AccessDenied/>} />     
     </Routes>
     

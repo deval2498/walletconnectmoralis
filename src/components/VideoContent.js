@@ -7,14 +7,18 @@ import vid2 from '../images/vid_2.png'
 import vid3 from '../images/vid_3.png'
 import vid4 from '../images/vid_4.png'
 import { useMoralis } from "react-moralis";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 
 const VideoContent = () => {
     const { logout, isAuthenticating } = useMoralis();
+  const IsUserAuth=JSON.parse(localStorage.getItem("User_Auth"))
     let navigate=useNavigate()
     const refreshPage = () => {
         navigate(0);
     }
+    if (!IsUserAuth) {
+        return <Navigate to="/" replace />;
+        }
     const handleDisconnect=()=>{
         logout()
         localStorage.setItem('User_Auth',false)
