@@ -28,4 +28,7 @@ text-fill-color: transparent;
     .connect-wallet-main{
         background-size: auto;
     }
+    .connect-with-metamask-img{
+        display: none;
+    }
   }

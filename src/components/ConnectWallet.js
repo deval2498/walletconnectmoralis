@@ -95,7 +95,7 @@ const ConnectWallet = () => {
           <AlertDialogBody>
 
         <div className="d-flex flex-column justify-content-center flex-wrap align-items-center">
-          <img src={connectWithMetamask} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
+          <img src={connectWithMetamask} className="my-2 connect-with-metamask-img" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
           <img src={connectWithwallet} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authWalletConnect()} alt="" srcSet='' />
         </div>
           </AlertDialogBody>
