@@ -9,6 +9,10 @@
 .accessdenied-heading{
     font-size: 52px;
 }
+.accessdenied_img{
+    width: 200px;
+    margin: 25px auto;
+}
 @media only screen and (max-width: 600px) {
     .accessdenied-phera{
         width: 100%;
