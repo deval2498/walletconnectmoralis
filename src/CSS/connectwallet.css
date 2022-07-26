@@ -4,12 +4,18 @@
     background: url('../images/bg.png') no-repeat center;
     background-size: 100vw;
 }
+.grupm{
+    height: 90px;
+}
 .wallet-connect-btn{
     background-color: #F5F9FF;
     border-radius: 6px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
-    padding: 22px 32px;
+    padding: 14px 36px;
+}
+.css-9fgtzh{
+    text-align: center !important;
 }
 .brew-heading{
     background: linear-gradient(180deg, #4AABE9 0%, rgba(255, 255, 255, 0.58) 100%);
@@ -30,5 +36,12 @@ background-clip: text;
     }
     .connect-with-metamask-img{
         display: none;
+    }
+    .grupm{
+        height: 80px;
+    }
+    .brew-p{
+        text-align: center;
+        font-size: 24px;
     }
   }

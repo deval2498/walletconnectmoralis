@@ -1,15 +1,25 @@
 .video-content-text{
     width: 70%;
+    margin-top: 3rem;
 }
 .container-fluid{
     margin: 0;
     padding: 0;
+}
+.videoContent-heading{
+    font-size: 52px;
 }
 .disconnect-btn-videocontent{
     height: 60px;
 }
 .videos-details{
     max-width: 450px;
+}
+.videoContent-p{
+    font-size: 22px;
+}
+.divein-p{
+    font-size: 26px;
 }
 @media only screen and (max-width: 600px) {
     .disconnect-btn-videocontent{
@@ -18,10 +28,27 @@
     .groupm-logo-videocontent{
         height: 45px;
     }
-    .videos-thumbnail{
+    /* .videos-thumbnail{
         width: 345px;
-    }
+    } */
     .videos-details{
         max-width: 350;
+    }
+    .videoContent-heading{
+        font-size: 40px;
+    }
+    .video-content-text{
+        width: 100%;
+        margin-top: 0 !important;
+    }
+    .videoContent-p{
+        font-size: 20px;
+    }
+    .divein-p{
+        font-size: 22px;
+        text-align: center;
+    }
+    .inspiration-h{
+        text-align: center;
     }
   }

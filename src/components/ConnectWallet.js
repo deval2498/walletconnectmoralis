@@ -77,7 +77,7 @@ const ConnectWallet = () => {
   }, [isWeb3Enabled, isAuthenticated, enableWeb3, user]);
   return (
     <div className="d-flex justify-content-center align-items-center flex-column connect-wallet-main">
-      <img src={groupMLogo} height={90} className="mb-5" alt="" srcSet="" />
+      <img src={groupMLogo} className="mb-5 grupm" alt="" srcSet="" />
       <div className="container d-flex justify-content-center align-items-center flex-column">
         <span
           className="brew-heading"
@@ -86,7 +86,7 @@ const ConnectWallet = () => {
           BREW 2022
         </span>
         <p className="brew-p" style={{ color: "white" }}>
-          The deeper yo go, The more you know.
+          The deeper you go, the more you know.
         </p>
         <div className="my-5">
           <span
@@ -104,17 +104,18 @@ const ConnectWallet = () => {
         onClose={onClose}
         isOpen={isOpen}
         isCentered
+        style={{padding:"2rem"}}
       >
         <AlertDialogOverlay />
 
         <AlertDialogContent>
-          <AlertDialogHeader>Connect Wallet</AlertDialogHeader>
+          <AlertDialogHeader className="mt-5">Connect Wallet</AlertDialogHeader>
           <AlertDialogCloseButton />
           <AlertDialogBody>
 
-        <div className="d-flex flex-column justify-content-center flex-wrap align-items-center">
-          <img src={connectWithMetamask} className="my-2 connect-with-metamask-img" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
-          <img src={connectWithwallet} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54", borderRadius:"12px"}} height={35} onClick={() => authWalletConnect()} alt="" srcSet='' />
+        <div className="d-flex flex-column justify-content-center flex-wrap align-items-center mb-5">
+          <img src={connectWithMetamask} className="my-2 connect-with-metamask-img" style={{cursor:"pointer", border:"2px solid #001F54",height:"76px", borderRadius:"12px"}} onClick={() => authenticate({ signingMessage: "Hello youtube" })} alt="" srcSet="" />
+          <img src={connectWithwallet} className="my-2" style={{cursor:"pointer", border:"2px solid #001F54",height:"76px", borderRadius:"12px"}} height={35} onClick={() => authWalletConnect()} alt="" srcSet='' />
         </div>
           </AlertDialogBody>
         </AlertDialogContent>

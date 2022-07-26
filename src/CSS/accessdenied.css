@@ -6,8 +6,18 @@
 .accessdenied-phera{
     width: 30%;
 }
+.accessdenied-heading{
+    font-size: 52px;
+}
 @media only screen and (max-width: 600px) {
     .accessdenied-phera{
-        width: 70%;
+        width: 100%;
+    }
+    .accessdenied_img{
+        width: 200px;
+        margin: 55px auto;
+    }
+    .accessdenied-heading{
+        font-size: 40px;
     }
   }
