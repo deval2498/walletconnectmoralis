@@ -54,7 +54,7 @@ const VideoContent = () => {
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
                             {/* <a href ='https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Andy-Session.mp4' target='_blank'><img src={vid1} alt="" srcSet="" className='videos-thumbnail' /></a> */}
-                            <video className='videos-thumbnail' controls>
+                            <video className='videos-thumbnail' poster={vid1} controls>
                             <source src="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Andy-Session.mp4" type="video/mp4"/>
                             </video>
                             <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Andy's Session</p>
@@ -63,7 +63,7 @@ const VideoContent = () => {
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div>
                             {/* <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/appriciation-vs-appropiation.mp4" target='_blank'><img src={vid2} alt="" srcSet="" className='videos-thumbnail' /></a> */}
-                            <video className='videos-thumbnail' controls>
+                            <video className='videos-thumbnail' poster={vid2} controls>
                             <source src="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/appriciation-vs-appropiation.mp4" type="video/mp4"/>
                             </video>
                             <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Appreciation vs Appropiation</p>
@@ -72,7 +72,7 @@ const VideoContent = () => {
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
                             {/* <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Dalvir-Session.mp4" target='_blank'><img src={vid3} alt="" srcSet="" className='videos-thumbnail' /></a> */}
-                            <video className='videos-thumbnail' controls>
+                            <video className='videos-thumbnail' poster={vid3} controls>
                             <source src="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Dalvir-Session.mp4" type="video/mp4"/>
                             </video>
                             <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Dalvir's Session</p>
@@ -81,7 +81,7 @@ const VideoContent = () => {
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
                             {/* <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Vir-Das-Session.mp4" target='_blank'><img src={vid4} alt="" srcSet="" className='videos-thumbnail' /></a> */}
-                            <video className='videos-thumbnail' controls>
+                            <video className='videos-thumbnail' poster={vid4} controls>
                             <source src="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Vir-Das-Session.mp4" type="video/mp4"/>
                             </video>
                             <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Vir Das's Session</p>
