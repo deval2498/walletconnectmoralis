@@ -2,10 +2,10 @@ import React,{useEffect} from 'react'
 import groupm from '../images/groupmVideoContent.png'
 import disconnect from '../images/diconnectVideoContent.png'
 import '../CSS/videocontent.css'
-import vid1 from '../images/vid_1.png'
-import vid2 from '../images/vid_2.png'
-import vid3 from '../images/vid_3.png'
-import vid4 from '../images/vid_4.png'
+import vid1 from '../images/Andysession.png'
+import vid2 from '../images/Appreciationvsappropiation.png'
+import vid3 from '../images/Dalvirsession.png'
+import vid4 from '../images/VirDassession.png'
 import { useMoralis } from "react-moralis";
 import { useNavigate, Navigate } from 'react-router-dom'
 
@@ -53,26 +53,26 @@ const VideoContent = () => {
                     <div className="row">
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
-                            <img src={vid1} alt="" srcSet="" className='videos-thumbnail' />
-                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href ='https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Andy-Session.mp4' target='_blank'><img src={vid1} alt="" srcSet="" className='videos-thumbnail' /></a>
+                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Andy's Session</p>
                             </div>
                         </div>
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div>
-                            <img src={vid2} alt="" srcSet="" className='videos-thumbnail' />
-                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/appriciation-vs-appropiation.mp4" target='_blank'><img src={vid2} alt="" srcSet="" className='videos-thumbnail' /></a>
+                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Appriciation vs Appropiation</p>
                             </div>
                         </div>
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
-                            <img src={vid3} alt="" srcSet="" className='videos-thumbnail' />
-                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Dalvir-Session.mp4" target='_blank'><img src={vid3} alt="" srcSet="" className='videos-thumbnail' /></a>
+                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Dalvir's Session</p>
                             </div>
                         </div>
                         <div className="col-md-6 my-5 d-flex justify-content-center">
                             <div className="">
-                            <img src={vid4} alt="" srcSet="" className='videos-thumbnail' />
-                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://monkhubweb.s3.ap-south-1.amazonaws.com/brew22/Vir-Das-Session.mp4" target='_blank'><img src={vid4} alt="" srcSet="" className='videos-thumbnail' /></a>
+                            <p style={{fontSize:"18px",color:"white"}} className="text-center mt-3 videos-details">Vir Das's Session</p>
                             </div>
                         </div>
                     </div>
